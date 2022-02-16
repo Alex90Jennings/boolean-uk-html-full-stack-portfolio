@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    scroll-behavior: smooth
+    }
+    /* STYLES */
+    .main-section {
+    border-top: 10px var(--secondary-color1) solid;
+    padding: 20px 10px;
+    }
+    .style-1 {
+    color: var(--secondary-color1);
+    font-weight: bold;
+    }
+    .style-2 {
+    text-decoration: underline;
+    }
+    h1 {
+    font-size: 4rem;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    }
+    h2 {
+    font-size: 2rem;
+    color: var(--primary-color2);
+    }
+    h3 {
+    color: var(--secondary-color1);
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    }
+    h4 {
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    }
+    h5 {
+    font-size: 1.8rem;
+    padding: 10px 0px;
+    }
+    html {
+    --primary-color1: rgb(106, 180, 149);
+    --primary-color2: rgb(184, 240, 212);
+    --secondary-color1: rgb(21, 31, 41);
+    --secondary-color2: rgb(228, 225, 225);
+    --third-color1: rgb(243, 205, 232);
+    --third-color2: rgb(146, 9, 66);
+    }
+    .center-wrapper {
+    max-width: 650px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 0 auto;
+    }
+    .centering {
+    justify-content: center;
+    text-align: center;
+    }
+  /*INTRODUCTION*/
+    .introduction {
+        background-color: var(--primary-color1);
+    }
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr repeat(3, 150px);
+        gap: 20px;
+        padding: 10px 50px;
+    }
+    .nav-bar button {
+        color: var(--primary-color1);
+        background-color: var(--primary-color2);
+        
+        width: 150px;
+        height: 40px;
+        border: 0;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .question {
+    color: var(--primary-color2);
+    }
+    .question p {
+        padding-bottom: 100px;
+    }
+  /*ABOUT ME*/
+    .about-me {
+    background-color: var(--secondary-color2);
+    }
+    .about-me p {
+    padding-bottom: 20px;
+    }
+    .lists {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    }
+    .lists ul {
+    padding: 10px 0px 30px 50px;
+    }
+  /*PORTFOLIO*/
+    .portfolio {
+    background-color: var(--third-color1);
+    }
+    .article-grid {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 30px;
+    }
+    .article {
+    width: 300px;
+    border: 10px var(--third-color2) solid;
+    border-radius: 5px;
+    background-color: var(--secondary-color2);
+    padding: 30px;
+    justify-content: center;
+    box-shadow: 0px 3px 3px var(--third-color2);
+    }
+    .article button {
+    width: 200px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    background-color: var(--third-color2);
+    color: var(--secondary-color2);
+
+    margin-bottom: 10px;
+    }
+    .article a {
+    color: var(--third-color2);
+    font-weight: bold;
+    font-size: 0.9rem;
+    }
+    .article p {
+    padding: 20px 0px;
+    }
+
+  /*EXPERIENCE*/
+
+    .experience {
+    background-color: var(--secondary-color2);
+    padding-bottom: 20px;
+    }
+    .experience p {
+    padding-bottom: 30px;
+    }
+
+  /* FOOTER */
+    .footer {
+    background-color: var(--secondary-color1);
+    color: var(--secondary-color2);
+    font-weight: bold;
+    padding-left: 50px;
+    border: 0;
+    }
