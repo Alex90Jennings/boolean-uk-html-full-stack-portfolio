@@ -42,12 +42,12 @@
     padding: 10px 0px;
     }
     html {
-    --primary-color1: rgb(106, 180, 149);
-    --primary-color2: rgb(184, 240, 212);
-    --secondary-color1: rgb(21, 31, 41);
-    --secondary-color2: rgb(228, 225, 225);
-    --third-color1: rgb(243, 205, 232);
-    --third-color2: rgb(146, 9, 66);
+    --primary-color1: #515561;
+    --primary-color2: #aaacb3;
+    --secondary-color1: #B28474;
+    --secondary-color2: #e0c3ba;
+    --third-color1: #e0d4cd;
+    --third-color2: #B28474;
     }
     .center-wrapper {
     max-width: 650px;
