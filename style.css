@@ -1,4 +1,4 @@
-* {
+*   {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -56,30 +56,40 @@
     margin: 0 auto;
     }
     .centering {
-    justify-content: center;
     text-align: center;
+    }
+    .grid-3-columns__expand-2 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    }
+    .auto-grid-columns {
+    display: grid;
+    grid-auto-columns: auto;
+    }
+    .auto-grid-rows {
+    display: grid;
+    grid-auto-rows: auto;
     }
   /*INTRODUCTION*/
     .introduction {
-        background-color: var(--primary-color1);
+    background-color: var(--primary-color1);
     }
     .nav-bar {
-        display: grid;
-        grid-template-columns: 1fr repeat(3, 150px);
-        gap: 20px;
-        padding: 10px 50px;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 150px);
+    gap: 20px;
+    padding: 10px 50px;
     }
-    .nav-bar button {
-        color: var(--primary-color1);
-        background-color: var(--primary-color2);
-        
-        width: 150px;
-        height: 40px;
-        border: 0;
-        border-radius: 5px;
-    }
-    .nav-bar a {
+    header a {
     color: var(--primary-color1);
+    background-color: var(--primary-color2);
+        
+    width: 250px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-right: 30px;
+
     text-decoration: none;
     font-weight: bold;
     }
@@ -108,7 +118,7 @@
     background-color: var(--third-color1);
     }
     .article-grid {
-    padding-top: 40px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 40px;
@@ -117,18 +127,26 @@
     }
     .article {
     width: 300px;
+    height: auto;
     border: 10px var(--third-color2) solid;
     border-radius: 5px;
     background-color: var(--secondary-color2);
     padding: 30px;
     justify-content: center;
     box-shadow: 0px 3px 3px var(--third-color2);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     }
-    .article button {
+    .article ul {
+    display: grid;
+    place-content: center;
+    }  
+    .read-more {
     width: 200px;
-    height: 30px;
     border: 0;
     border-radius: 5px;
+    padding: 5px 0px;
 
     font-weight: bold;
 
@@ -136,11 +154,15 @@
     color: var(--secondary-color2);
 
     margin-bottom: 10px;
+    text-decoration: none;
+    }
+    .github-repo {
+    color: var(--third-color2);
     }
     .article a {
-    color: var(--third-color2);
     font-weight: bold;
     font-size: 0.9rem;
+    display: block;
     }
     .article p {
     padding: 20px 0px;
